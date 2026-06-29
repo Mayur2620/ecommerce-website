@@ -1,0 +1,28 @@
+.wishlist-btn {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 20px;
+
+  color: #888;
+
+  z-index: 10;
+}
+
+.wishlist-btn.active {
+  color: red;
+}
+
+.wishlist-btn:hover {
+  transform: scale(1.1);
+}
+
+.deal-product-card {
+  position: relative;
+}

@@ -1,0 +1,150 @@
+.deals-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+}
+
+.deals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.deals-header h3 {
+  font-weight: 700;
+}
+
+.view-all-btn {
+  border: none;
+  background: #2874f0;
+  color: white;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+}
+
+.deals-products {
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+}
+
+.deals-products::-webkit-scrollbar {
+  display: none;
+}
+
+.home-empty-message {
+  color: #6b7280;
+  font-weight: 700;
+  margin: 0;
+  min-width: 220px;
+  padding: 18px 0;
+}
+
+.deal-product-card {
+  min-width: 220px;
+
+  border: 1px solid #eee;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  position: relative;
+
+  transition: .3s;
+
+  cursor: pointer;
+}
+
+.deal-product-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 10px 20px rgba(0,0,0,.08);
+}
+
+.discount-badge {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  background: #28a745;
+
+  color: white;
+
+  padding: 4px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.deal-product-card img {
+  width: 100%;
+  height: 170px;
+
+  object-fit: contain;
+
+  margin-bottom: 10px;
+}
+
+.deal-product-card h6 {
+  min-height: 45px;
+}
+
+.rating {
+  color: #ffc107;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.price-section {
+  display: flex;
+
+  gap: 10px;
+
+  align-items: center;
+}
+
+.new-price {
+  font-size: 18px;
+
+  font-weight: 700;
+
+  color: #2874f0;
+}
+
+.old-price {
+  text-decoration: line-through;
+
+  color: gray;
+}
+
+@media(max-width:768px){
+  .deal-product-card{
+    min-width:180px;
+  }
+}
+.deals-products {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.deals-products::-webkit-scrollbar {
+  display: none;
+}

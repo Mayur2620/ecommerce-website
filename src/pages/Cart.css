@@ -1,0 +1,120 @@
+body {
+  background: #f1f3f6;
+}
+
+/* Product Card */
+.cart-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.cart-product-image {
+  height: 180px;
+  object-fit: contain;
+}
+
+/* Product Name */
+.product-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Price */
+.current-price {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #878787;
+  font-size: 15px;
+}
+
+.discount-text {
+  color: #388e3c;
+  font-weight: 600;
+}
+
+/* Quantity */
+.quantity-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #c2c2c2;
+  background: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.quantity-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Remove Button */
+.remove-btn {
+  border: none;
+  background: none;
+  font-weight: 600;
+  color: #2874f0;
+}
+
+.remove-btn:hover {
+  color: red;
+}
+
+/* Price Details */
+.price-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  position: sticky;
+  top: 90px;
+}
+
+.price-title {
+  color: #878787;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.saving-text {
+  color: #388e3c;
+  font-weight: 600;
+}
+
+/* Place Order */
+.place-order-btn {
+  background: #fb641b;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.place-order-btn:hover {
+  background: #e55b17;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .price-card {
+    margin-top: 20px;
+    position: static;
+  }
+
+  .cart-product-image {
+    height: 120px;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+}

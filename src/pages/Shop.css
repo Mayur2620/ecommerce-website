@@ -1,0 +1,173 @@
+/* Background */
+body {
+  background: #f1f3f6;
+}
+
+/* Shop Container */
+.shop-container {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+/* Category Section */
+.category-section {
+  background: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.category-btn {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.category-btn:hover {
+  background: #2874f0;
+  color: white;
+  border-color: #2874f0;
+}
+
+.active-category {
+  background: #2874f0;
+  color: white;
+  border-color: #2874f0;
+}
+
+/* Product Card */
+.flipkart-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  border: 1px solid #e0e0e0;
+  height: 100%;
+}
+
+.flipkart-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Section */
+.product-image-box {
+  background: white;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.flipkart-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Product Title */
+.product-title {
+  font-size: 15px;
+  font-weight: 500;
+  min-height: 45px;
+  color: #212121;
+}
+
+/* Rating */
+.rating-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #388e3c;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Pricing */
+.current-price {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.original-price {
+  color: #878787;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.discount-text {
+  color: #388e3c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Add To Cart Button */
+.add-cart-btn {
+  width: 100%;
+  margin-top: 15px;
+  border: none;
+  background: #fb641b;
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  background: #e85a14;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-image-box {
+    height: 220px;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  .current-price {
+    font-size: 18px;
+  }
+
+  .category-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+/* Wishlist */
+.wishlist-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 10;
+  cursor: pointer;
+}
