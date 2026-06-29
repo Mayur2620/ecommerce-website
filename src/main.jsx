@@ -22,7 +22,7 @@ ReactDOM.createRoot(
 
     <Provider store={store}>
 
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
 
         <Toaster
           position="top-right"
